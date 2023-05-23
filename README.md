@@ -12,7 +12,7 @@ The user wins the game when their number is the same as computer's number.
 
 Choose number between **x** and **y**, then press *Enter*.
 
-The computer selects a random number, then returns information whether the number is **less than, greater than, or equal to the selected number.
+The computer selects a random number, then returns information whether the number is **less than, greater than, or equal to the selected number.**
 
 **MY SOLUTION**
 
