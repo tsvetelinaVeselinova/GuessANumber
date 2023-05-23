@@ -6,14 +6,14 @@ namespace Practical_Project_Guess_A_Number
     {
         static void Main(string[] args)
         {
-          Random randomNumber = new Random();
-          int x = 1;
-          int y = 101;
-          int computerNumber = randomNumber.Next(x, y);
-          int triesCount = 0;
-          bool restart = false;
+            Random randomNumber = new Random();
+            int x = 1;
+            int y = 101;
+            int computerNumber = randomNumber.Next(x, y);
+            int triesCount = 0;
+            bool restart = false;
 
-            while (triesCount <= 5 || restart == false)
+            while (triesCount <= 5)
             {
                 Console.Write("Guess a number (1-100): ");
 
@@ -22,14 +22,14 @@ namespace Practical_Project_Guess_A_Number
 
                 triesCount++;
 
-                if(isValid)
+                if (isValid)
                 {
-                    if(playerNumber == computerNumber)
+                    if (playerNumber == computerNumber)
                     {
                         Console.WriteLine("You guessed it!");
                         Console.WriteLine("Do you want to restart the game?");
                         string question = Console.ReadLine();
-                        if(question == "yes" || question == "Yes")
+                        if (question == "yes" || question == "Yes")
                         {
                             restart = true;
                             triesCount = 0;
@@ -38,13 +38,13 @@ namespace Practical_Project_Guess_A_Number
                             computerNumber = randomNumber.Next(x, y);
                             continue;
                         }
-                        else if(question == "no" || question == "No")
+                        else if (question == "no" || question == "No")
                         {
                             break;
                         }
 
                     }
-                    else if(playerNumber > computerNumber)
+                    else if (playerNumber > computerNumber)
                     {
                         Console.WriteLine("Too High");
                     }
@@ -59,11 +59,11 @@ namespace Practical_Project_Guess_A_Number
                 }
             }
 
-            if(triesCount == 5)
+            if (triesCount >= 5)
             {
                 Console.WriteLine("You have no more tries!");
             }
-                 
+
         }
     }
 }
