@@ -11,8 +11,7 @@ namespace Practical_Project_Guess_A_Number
             int y = 101;
             int computerNumber = randomNumber.Next(x, y);
             int triesCount = 0;
-            bool restart = false;
-
+            
             while (triesCount <= 5)
             {
                 Console.Write("Guess a number (1-100): ");
@@ -31,7 +30,6 @@ namespace Practical_Project_Guess_A_Number
                         string question = Console.ReadLine();
                         if (question == "yes" || question == "Yes")
                         {
-                            restart = true;
                             triesCount = 0;
                             x += 100;
                             y += 100;
