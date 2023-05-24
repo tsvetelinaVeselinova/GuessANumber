@@ -5,7 +5,9 @@ C#
 
 **Guess A Nubmer** is a game where a user is supposed to guess the number that the computer has randomly chosen (between a range of numbers, depending on the level).
 Each time the user enters a number (if it is not equal to the computer's one) the computer will tell them whether it is lower or higher than the expected number.
+
 The user wins the game when their number is the same as computer's number.
+
 ***The number of attempts is 5**, and there is an option to start the game again if the number is guessed.*
 
 **INPUT and OUTPUT**
@@ -26,9 +28,6 @@ I used:
 
 **Nested if-else statement to check  the player's input**
 
-**LINK TO THE SOURCE CODE:**
-
-[Source Code](GuessANumber.cs)
 
 **SCREENSHOTS**
 
@@ -45,7 +44,7 @@ I used:
 *You can play the game directly in your Web browser here:* 
 (https://replit.com/@tsvetelinaVesel/GuessANumber#Main.cs)
 
-![image](https://github.com/tsvetelinaVeselinova/GuessANumber/assets/133970524/31c0ea94-b3c0-4f7e-a25a-a8e997aff3c6)
+![Replit](https://github.com/tsvetelinaVeselinova/GuessANumber/assets/133970524/144822cd-d367-480e-8a2f-8135fa4f7da8)
 
 
 
